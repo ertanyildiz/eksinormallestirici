@@ -19,5 +19,8 @@
       "js": ["jquery.min.js","script.js"],
       "css": ["fix.css"]
     }
-  ]
+  ],
+  "web_accessible_resources": [
+    "kanalList.json"
+]
 }
