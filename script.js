@@ -121,7 +121,17 @@
 		);
 	}
 
-
+	/* diğer kanal linklerini ekle. */
+	const url = chrome.runtime.getURL('kanalList.json');
+	$.getJSON( url, function( data ) {
+  var items = [];
+  $.each( data, function( key, val ) {
+    items.push( val);
+  });
+  console.log("burda")
+	$("#topic-channels").append("<hr>");
+	$("#topic-channels").append(items.join( "" ));
+ });
 
 
 })(jQuery);
